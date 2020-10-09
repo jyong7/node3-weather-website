@@ -10,7 +10,7 @@ const forecast=(latitude,altitude,callback)=>{
         }else if(body.error){
             callback('No se puede encontrar la ubicacion',undefined)        
         }else{
-            callback(undefined,'Ultima actualización'+body.current.observation_time+'<br> --- Descripción del clima: '+body.current.weather_descriptions[0]+'\n La temperatura es: '+body.current.temperature + ', pero se siente como si hiciera: ' + body.current.feelslike+'\n Probabilidad de lluvia: '+ body.current.precip+'\n Humedad: '+body.current.humidity)
+            callback(undefined,'Ultima actualización '+body.current.observation_time+' --- Descripción del clima: '+body.current.weather_descriptions[0]+' --- La temperatura es: '+body.current.temperature + ', pero se siente como si hiciera: ' + body.current.feelslike+' --- Probabilidad de lluvia: '+ body.current.precip+' --- Humedad: '+body.current.humidity+'%')
     }})
 }
 
