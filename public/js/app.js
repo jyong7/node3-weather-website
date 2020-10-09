@@ -1,5 +1,3 @@
-console.log('El archivo javascript esta cargado')
- 
 
 const weatherForm = document.querySelector('form')
 
